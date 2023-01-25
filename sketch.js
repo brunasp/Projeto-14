@@ -55,18 +55,18 @@ function draw() {
   
   var select_balloon = Math.round(random(1,4));
  
-  if (World.frameCount % 100 == 0) {
-   switch(select_balloon){
-    case 1: redBalloon.addImage(red_balloonImage);//chamar o balão vermelho
-            break;
-    case 2: blueBalloon.addImage(blue_balloonImage);// chamar o balão azul
-            break;
-    case 3: greenBalloon.addImage(green_balloonImage);// chamar o balão verde
-            break;
-    case 4: pinkBalloon.addImage(pink_balloonImage);// chamar o balão rosa
-            break;
-    default: break;
-  }}
+
+  if (World.frameCount % 100 == 0) { 
+    switch(select_balloon){ 
+      case 1: redBalloon(); //chamar o balão vermelho 
+      break;
+       case 2: blueBalloon();// chamar o balão azul 
+       break; 
+       case 3: greenBalloon();// chamar o balão verde 
+       break; 
+       case 4: pinkBalloon();// chamar o balão rosa
+        break; 
+        default: break; }}
     
   drawSprites();
 }
